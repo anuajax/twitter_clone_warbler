@@ -1,0 +1,157 @@
+body {
+
+  background: linear-gradient(to left, rgb(26, 230, 168), rgb(12, 180, 243));
+  background-size: 100% 100%;
+
+
+
+
+
+  /*margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  margin-bottom: 1rem;
+}
+.navbar-brand  h4 {color: black;}
+.navbar-brand  h4:hover {color: whitesmoke;}
+
+.navbar a{
+  font-weight: bold;
+  font-size: large;
+  color: rgb(49, 122, 218);
+}
+.navbar a:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-brand > img,h4 {
+  display: inline;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  width: 40px;
+  border-radius: 2px;
+}
+ul.nav.navbar-nav li {
+  margin: 0 0.5rem;
+
+}
+.navbar-right{
+  position: relative;
+}
+.onboarding > .navbar{
+  background : transparent;
+ 
+}
+/*-image: url("./images/nav-bg.png");*/
+.hero{
+  display: flex;
+  align-items: center;
+}
+.home-hero{
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  background-image: url("./images/signed-out-home.jpg");
+  text-align: center;
+  padding: 1rem;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 6px whitesmoke;
+}
+
+.sidediv{
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: -1;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.sidediv h4{
+  width: max-content;
+}
+
+
+
+#messages .list-group{
+
+}
+#messages .list-group-item{
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 20px 12px;
+  margin: 5px;
+}
+
+#messages:not(.no-hover) .list-group-item:hover{
+background-color: #fff;
+}
+
+
+.timeline-image{
+  border-radius: 50px;
+  height: 48px;
+  width: 48px;
+  margin: 2px 30px 10px 10px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+a.btn.btn-danger,
+a.btn.btn-danger:hover{
+  color: white;
+}
+.btn-success{
+margin: 8px;
+}
+.btn-primary{
+  margin-top:8px;
+}
+
+
+
+.flip:hover{animation-play-state: paused;}
+.flip{
+  animation: move 10s infinite linear ;
+}
+
+@keyframes move{
+	
+	100%{
+		transform: rotate3d(0,1,0,360deg);
+}
+}
+.particles{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
